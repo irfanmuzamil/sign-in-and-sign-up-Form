@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="signUpCard" id="signUp">
+
+        <h1>Register new <br>account </h1>
+
+        <form onsubmit="return false;" id="resetSignUpForm" >
+            <div class="row" >
+                <input type="text" placeholder="First name" id="firstName">
+                <input type="text"placeholder="Last name" id="lastName">
+            </div>
+            <div class="notRow">
+                <input type="email"placeholder="Email address" id="Email" >
+                <input type="text"placeholder="Mobile number" id="mobilePhone">
+                <input type="password"placeholder="New password" id="newPass">
+            </div>
+        
+
+            <button class="Btn" onclick="gotoSignIn()">Sign Up</button>
+
+            <p>Already have an account ?<a href="#" onclick="sendtoSignInPage()"> Sign in</a></p>
+            
+            <div class="icons">
+                <a href="https://web.facebook.com/profile.php?id=100006229125169">
+                   <span><i class="fa fa-facebook"></i></span>
+                </a>
+                <a href="https://www.linkedin.com/in/irfan-ullah-khan5566/">
+                   <span><i class="fa fa-linkedin"></i></span>
+                </a>
+                <a href="https://www.instagram.com/engr.irfanullah99/">
+                   <span><i class="fa fa-instagram"></i></span>
+                </a>
+                <a href="https://twitter.com/Irfanullah996">
+                   <span><i class="fa fa-twitter"></i></span>
+                </a>
+               </div>
+        </form>
+    </div>
+
+
+<!-- sign In -->
+
+    <div class="signInCard" style="margin:10% auto;" id="signIn">
+    
+        <h1 id="comeToSignUpPage">Login</h1>
+    
+        <form onsubmit="return false;"  id="resetSignInForm">
+            
+            <div class="notRow">
+                <input type="email"placeholder="Email address" id="email">
+                <input type="password"placeholder="Password" id="pass">
+            </div>
+
+            <button class="Btn" onclick="gotoSignUp()" >Sign in</button>
+
+            <p>Don,t have an account<a href="#"  onclick="sendtoSignUpPage()"> Sign Up</a></p>
+        
+            <div class="icons">
+             <a href="https://web.facebook.com/profile.php?id=100006229125169">
+                <span><i class="fa fa-facebook"></i></span>
+             </a>
+             <a href="www.linkedin.com/in/irfan-ullah-khan5566">
+                <span><i class="fa fa-linkedin"></i></span>
+             </a>
+             <a href="https://www.instagram.com/engr.irfanullah99/">
+                <span><i class="fa fa-instagram"></i></span>
+             </a>
+             <a href="https://twitter.com/Irfanullah996">
+                <span><i class="fa fa-twitter"></i></span>
+             </a>
+            </div>
+        </form>
+    </div> 
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
